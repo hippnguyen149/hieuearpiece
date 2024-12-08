@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ourproducts</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="sidebar">
+				<a href="index.html" class="logo"><img src="images/tiu.jpg" alt=""></a>
+				<ul>
+					<li>
+						<span><a href="index.html">home</a></span>
+					</li>
+					<li  class="selected">
+						<span><a href="wines.html">our products</a></span>
+					</li>
+					<li>
+						<span><a href="history.html">history</a></span>
+					</li>
+					<li>
+						<span><a href="about.html">about</a></span>
+					</li>
+					<li>
+						<span><a href="blog.html">blog</a></span>
+					</li>
+					<li>
+						<span><a href="contact.html">contact</a></span>
+					</li>
+				</ul>
+				<div class="contact">
+					<ul>
+						<li class="address">
+							<span>address</span>
+							<ul>
+								<li>
+									Tokyo International University
+								</li>
+								<li>
+									Ikebukuro
+								</li>
+								<li>
+									Tokyo
+								</li>
+							</ul>
+						</li>
+						<li class="contactInfo">
+							<span>contact info</span>
+							<ul>
+								<li>
+									049-232-1111
+								</li>
+							</ul>
+						</li>
+						<li class="mail">
+							<span>email</span>
+							<ul>
+								<li>
+									<a href="#">tiuearpiece@gmail.com</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="connect">
+					<b>Partnerships</b>
+					<p>
+						Check out our partners. We coorporate with big brands around the world. 
+					</p>
+					<ul>
+						<li id="facebook">
+							<a href="https://www.facebook.com/DevialetGlobal/">facebook</a>
+						</li>
+						<li id="twitter">
+							<a href="https://x.com/BangOlufsen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">twitter</a>
+						</li>
+						<li id="googleplus">
+							<a href="https://moondroplab.com/">googleplus</a>
+						</li>
+						<li id="googleplus">
+							<a href="https://www.thieaudio.com/">googleplus</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="content">
+				<div id="header">
+					<img src="images/bg2.jpg" alt="">
+					<h1>our earpieces</h1>
+				</div>
+				<div id="body">
+					<h3>we offer a wide variety of products.</h3>
+					<p>
+						We put emphasis on the building quality, music quality and the credibility of the brand.
+					</p>
+					<h3>If you are not sure what products you want, check out this</h3>
+					<h2>Select an Option</h2>
+					<label for="dropdown">Choose the music genre that you like:</label>
+					<select id="dropdown">
+						<option value="" disabled selected>-- Select --</option>
+						<option value="option1">Pop</option>
+						<option value="option2">Rock</option>
+						<option value="option3">Kpop</option>
+						<option value="option4">Jazz</option>
+						<option value="option5">Classical</option>
+						<option value="option6">Idk</option>
+					</select>
+				
+					<div id="output"></div>
+				
+					<script>
+						// Get references to the dropdown and output elements
+						const dropdown = document.getElementById('dropdown');
+						const output = document.getElementById('output');
+				
+						// Add an event listener to the dropdown
+						dropdown.addEventListener('change', function () {
+							// Get the selected value
+							const selectedValue = dropdown.value;
+				
+							// Determine the output text based on the selected value
+							let message = '';
+							switch (selectedValue) {
+								case 'option1':
+									message = 'If your favorite genre is Pop, you should buy Aful P7 or Hype 10';
+									break;
+								case 'option2':
+									message = 'If your favorite genre is Rock, you should buy Hype 4';
+									break;
+								case 'option3':
+									message = 'If your favorite genre is Kpop, you should buy Moondrop Variations';
+									break;
+								case 'option4':
+									message = 'If your favorite genre is Jazz, you should buy Moondrop Blessing 3';
+									break;
+								case 'option5':
+									message = 'If your favorite genre is Classical, you should buy any Moondrop products';
+									break;
+								case 'option6':
+									message = 'If you dont know what genre you like, you should buy Hype 10 or Dunu 6';
+									break;
+								default:
+									message = 'Please select an option.';
+							}
+				
+							// Display the output message
+							output.textContent = message;
+						});
+					</script>
+					<h3>List of Items</h3>
+					<p>
+						Here are the best earpieces that you can find.
+					</p>
+					<ul>
+						<li>
+							<a class="figure" href="https://moondroplab.com/en/products/blessing3"><img src="images/iem20.jpg" alt=""></a>
+							<h3>Moondrop Blessing 3</h3>
+							<p>
+								Clean, Vocal, Luxury 
+							</p>
+							<a href="https://moondroplab.com/en/products/blessing3" class="more">learn more</a>
+						</li>
+						<li>
+							<a class="figure" href="https://moondroplab.com/en/products/variations"><img src="images/iem21.jpg" alt=""></a>
+							<h3>Moondrop Variations</h3>
+							<p>
+								Amazing V sounds.
+							</p>
+							<a href="https://moondroplab.com/en/products/variations" class="more">learn more</a>
+						</li>
+						<li>
+							<a class="figure" href="https://knicom.co.jp/product/hype-10/"><img src="images/iem22.jpg" alt=""></a>
+							<h3>Thieaudio Hype 10</h3>
+							<p>
+								Extraordinary Bass 
+							</p>
+							<a href="https://knicom.co.jp/product/hype-10/" class="more">learn more</a>
+						</li>
+						<li>
+							<a class="figure" href="https://knicom.co.jp/product/hype4/"><img src="images/iem23.jpg" alt=""></a>
+							<h3>Thieaudio Hype 4</h3>
+							<p>
+								Boost bass
+							</p>
+							<a href="https://knicom.co.jp/product/hype4/" class="more">learn more</a>
+						</li>
+						<li>
+							<a class="figure" href="https://www.stereoindex.com/headphones/dunu-sa6-est-in-ear-headphones-featuring-a-hybrid-design/"><img src="images/iem24.jpg" alt=""></a>
+							<h3>Dunu 6</h3>
+							<p>
+								Best options in 2024
+							</p>
+							<a href="https://www.stereoindex.com/headphones/dunu-sa6-est-in-ear-headphones-featuring-a-hybrid-design/" class="more">learn more</a>
+						</li>
+						<li>
+							<a class="figure" href="https://www.head-fi.org/showcase/aful-performer-5-2-performer-7.27590/"><img src="images/iem25.jpg" alt=""></a>
+							<h3>Aful P7</h3>
+							<p>
+								Newest iem in the market
+							</p>
+							<a href="https://www.head-fi.org/showcase/aful-performer-5-2-performer-7.27590/" class="more">learn more</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
